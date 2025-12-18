@@ -1,2 +1,2 @@
-# Solo_Leveling_The_Game
 Jogo Solo Leveling para Computador
+Link de acesso: https://marcodionedev.github.io/VesaoComputador-Jogo-Solo-Leveling/
