@@ -1,3 +1,7 @@
+.sumario{
+  font-size: 20px;
+}
+
 .BotaoTrocarConteudo {
   background-color: #092857;
   border: solid 3px #092857;
@@ -60,7 +64,7 @@
   }
 
 .img1{
-width: 250px;
+width: 200px;
 height: 150px;
 border: solid 2px #17e5f2;
 border-radius: 20px;
