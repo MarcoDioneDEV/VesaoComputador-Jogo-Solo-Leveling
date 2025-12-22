@@ -208,9 +208,9 @@ document.getElementById("enviarR").addEventListener("click", function() {
   var senhaR = document.getElementById("senhaR").value;
   var mensagemR = document.getElementById("mensagemR");
 
-  if (senhaR === "trono") {
-    mensagemR.innerHTML = "Código 'trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris";
-    alert("O código 'trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris");
+  if (senhaR === "Trono") {
+    mensagemR.innerHTML = "Código 'Trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris";
+    alert("O código 'Trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris");
 
   /*............INÍCIO DOS PONTOS ATÉ A LUTA DO IGRIS ............*/
 
@@ -244,6 +244,7 @@ document.getElementById("enviarR").addEventListener("click", function() {
 
 EqualizadoDoNivel = 38; /*Nível 38*/
 dia = 10;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
 RecompensaDiaria = 9;
 document.getElementById("idNivelDoRank").innerHTML = "Rank: B ⭐⭐⭐⭐";
 document.getElementById("idnivel").innerHTML ="Nível: " + EqualizadoDoNivel;
@@ -255,11 +256,13 @@ document.getElementById("idCheckLordeDaMineracao").innerHTML = "Título: Lorde d
  document.getElementById("idCheckGoblins").innerHTML =   "Título: Exterminador de Goblins";
 document.getElementById("idCheckLobos").innerHTML =  "Título: Assassino de Lobos";
 document.getElementById("idCheckAdversidade").innerHTML =  "Título: Aquele que Superou a Adversidade";
+
 document.getElementById("idItemToqueDoDominadorAdquirida").innerHTML =   "Toque do Dominador";
 document.getElementById("idItemElmoAdquirida").innerHTML =  "Elmo do Cavaleiro Carmesim";
  document.getElementById("idItemPresaKasakaAdquirida").innerHTML = "Presa Venenosa de Kasaka";
 document.getElementById("idItemColeiraAdquirida").innerHTML =  "Coleira do Guardião";
  document.getElementById("idItemAssassinaCavaleirosAdquirida").innerHTML = "Assassina de Cavaleiros";
+
 document.getElementById("idCheckSaudelongevidade").innerHTML =  "Habilidade: Saúde e longevidade";
    document.getElementById("idCheckAssassina").innerHTML =  "Habilidade: Intenção Assassina";
 document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtividade";
@@ -268,12 +271,18 @@ document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtivida
 
   ouro = 1271; /*806 + adaga(50) + espada(100) + Escudo(115) + Assassina de cavaleiros(200)*/
     document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
+
+    document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia [Dica: tente lutar contra as Cetopeias gigantes]";
+
   SomaDaPocaoDeVida = 127;
    document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 130 Poções de Vida na loja: " + SomaDaPocaoDeVida + "/130";
+
   SomaDaPocaoDeRecuperacao = 250;
    document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "Faça a compra de 300 Poções de Fadiga na loja: " +  SomaDaPocaoDeRecuperacao + "/300";
+
   SomaDosCristais =  13114;
   document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 20.000 Cristais de Mana minerados: " + SomaDosCristais +  "/20000";
+
   SomaDaPresaDeLycan = 20;
   PresaDeLycan = 0;
   PedraDeEssencia = 0;
@@ -282,25 +291,93 @@ document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtivida
  experienciaParaUsarNasHabilidades = 153; /*8 sobrando + 45 da Arrancada + 50 do Aquele que Superou a Adversidade + 50 na barra de mana= 8*/
  document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
  
-  Kandiaru = 2;
-  Goblin = 10;
-  Lycan = 20;
-  Kasaka = 1;
-  Insectoids = 5
-  Aranha = 1;
-  Cacadores = 6;
-  Cerberus = 1;
-  Kang = 1;
-  Igris = 3;
+
+
+
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+Kasaka = 1;
+document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
+
+Insectoids = 5
+document.getElementById("idNome1Insectoids").innerHTML =  "";
+document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
+
+Aranha = 1;
+document.getElementById("idNome1Buryura").innerHTML =  "";
+document.getElementById("idNome2Buryura").innerHTML =  "Buryura";
+
+Cacadores = 6;
+document.getElementById("idNome1Hwang").innerHTML =  "";
+document.getElementById("idNome2Hwang").innerHTML =  "Hwang Dong Suk e seu grupo";
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+
+Cerberus = 1;
+document.getElementById("idNome1Cerberus").innerHTML =  "";
+document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
+
+Kang = 1;
+document.getElementById("idNome1Kang").innerHTML =  "";
+document.getElementById("idNome2Kang").innerHTML =  "Mr. Kang";
+
+Igris = 3;
+document.getElementById("idNome1Igris").innerHTML =  "";
+document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
+
+Yoo = 20;
+document.getElementById("idNome1Yoo").innerHTML =  "";
+document.getElementById("idNome2Yoo").innerHTML =  "Yoo Jin-Ho";
+document.getElementById("iditem1").innerHTML = "✅ Item: Peitoral do grande cavaleiro [+ 1 ponto de atributo adicionado em Força]";
+document.getElementById("iditem2").innerHTML = "✅ Item: Manopla do grande guerreiro [+ 1 ponto de atributo adicionado em Agilidade]";
+document.getElementById("iditem3").innerHTML = "✅ Item: Botas do grande Assassino [+ 2 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem4").innerHTML = "✅ Item: Luvas do grande Arqueiro [+ 2 ponto de atributo adicionado em Percepção]";
+document.getElementById("iditem5").innerHTML = "✅ Item: Anel do grande Mago [+ 3 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem6").innerHTML = "✅ Item: Saco de couro [+ 500 moedas de ouro adicionadas no seu inventário]";
+document.getElementById("iditem7").innerHTML = "✅ Habilidade: Perseverança [+ 3 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem8").innerHTML = "✅ Habilidade: Ataque Vital [+ 4 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem9").innerHTML = "✅ Habilidade: Artes Avançadas com Adagas [+ 4 pontos de atributos adicionados em Força]";
+document.getElementById("iditem10").innerHTML = "✅ Habilidade: Detectar [+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem11").innerHTML = "✅ Habilidade: Arremesso de Adaga [+ 5 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem12").innerHTML = "✅ Efeito: Orbe da Avareza - Desejo pela destruição [+ 5 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem14").innerHTML = "✅ Habilidade: Golpe Fatal[+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem15").innerHTML = "✅ Habilidade: Flame Spear desbloqueada [Aba ➜ Habilidades ➜ Healer e Magos]";
+document.getElementById("iditem16").innerHTML = "✅ Item: Veneno da Kasaka Azul de Presas Venenosas [Recupere 100% da sua vida]";
+document.getElementById("iditem19").innerHTML = "✅ Habilidade: Força de vontade [Recupere 100% da sua vida]";
+document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda [+ 3000 moedas de ouro adicionadas no seu inventário]";
+
+ HabilidadeLiberadaFlameSpear = 1;
+ document.getElementById("idCheckFlameSpear").innerHTML =  "⚠️ Habilidade: Flame Spear";
 
    /*............ FIM DOS PONTOS ATÉ A LUTA DO IGRIS ..............*/
 
   } 
   
 
-  else if (senhaR === "hino") {
-    mensagemR.innerHTML = "Código 'hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan";
-    alert("Código 'hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan");
+  else if (senhaR === "Hino") {
+    mensagemR.innerHTML = "Código 'Hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan";
+    alert("Código 'Hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan");
 
     /*............INÍCIO DOS PONTOS ATÉ A LUTA DO KARKALGAN ............*/
 
@@ -329,11 +406,12 @@ document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtivida
     document.getElementById("idforca").innerHTML = "💪 Força: " + forca;
     document.getElementById("idpercepcao").innerHTML =  "👀 Percepção: " + percepcao;
     document.getElementById("idinteligencia").innerHTML =   "🧠 Inteligência: " + inteligencia;
-  const dados = { agilidade, forca, percepcao, inteligencia,}; atualizarGrafico(dados); /*FIM DO ATUALIZAR GRÁFICO*/
+ const dados = { agilidade, forca, percepcao, inteligencia,}; atualizarGrafico(dados);  /*FIM DO ATUALIZAR GRÁFICO*/
 
 
 EqualizadoDoNivel = 42; /*Nível 42*/
 dia = 13;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
 RecompensaDiaria = 12;
 document.getElementById("idNivelDoRank").innerHTML = "Rank: A ⭐⭐⭐⭐⭐";
  document.getElementById("idClasse").innerHTML = "Classe: Necromante [Monarca das Sombras]";
@@ -375,23 +453,112 @@ document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtivida
  experienciaParaUsarNasHabilidades = 295; /*70 em estoque + 45 da Arrancada + 100 do Aquele que Superou a Adversidade + 80 da barra de mana*/
  document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
 
-  Kandiaru = 2;
-  Goblin = 10;
-  Lycan = 20;
-  Kasaka = 1;
-  Insectoids = 5
-  Aranha = 1;
-  Cacadores = 6;
-  Cerberus = 1;
-  Kang = 1;
-  Igris = 3;
-  Magos = 2;
-  Ursos = 6;
-  Elfos = 1;
-  KinChul = 1;
-  Baruka = 2;
-  Kargalgan = 1;
+  
+document.getElementById("idRetornoMissaoDiariaTreino").innerHTML = "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Baruka Elfo do gelo [Boss na Dangeon Portal Vermelho]";
+document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao",).innerHTML = "";
 
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+Kasaka = 1;
+document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
+
+Insectoids = 5
+document.getElementById("idNome1Insectoids").innerHTML =  "";
+document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
+
+Aranha = 1;
+document.getElementById("idNome1Buryura").innerHTML =  "";
+document.getElementById("idNome2Buryura").innerHTML =  "Buryura";
+
+Cacadores = 6;
+document.getElementById("idNome1Hwang").innerHTML =  "";
+document.getElementById("idNome2Hwang").innerHTML =  "Hwang Dong Suk e seu grupo";
+
+Cerberus = 1;
+document.getElementById("idNome1Cerberus").innerHTML =  "";
+document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+
+Kang = 1;
+document.getElementById("idNome1Kang").innerHTML =  "";
+document.getElementById("idNome2Kang").innerHTML =  "Mr. Kang";
+
+Igris = 3;
+document.getElementById("idNome1Igris").innerHTML =  "";
+document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
+
+Magos = 2;
+document.getElementById("idNome16Magos").innerHTML =  "";
+document.getElementById("idNome26Magos").innerHTML =  "6 Magos Necromantes";
+
+Ursos = 6;
+document.getElementById("idNome1Ursos").innerHTML =  "";
+document.getElementById("idNome2Ursos").innerHTML =  "Ursos de Gelo";
+
+Elfos = 1;
+document.getElementById("idNome1Elfos").innerHTML =  "";
+document.getElementById("idNome2Elfos").innerHTML =  "Elfos do gelo";
+
+KinChul = 1;
+document.getElementById("idNome1Chul").innerHTML =  "";
+document.getElementById("idNome2Chul").innerHTML =  "Kim Chul";
+
+Baruka = 2;
+document.getElementById("idNome1Baruka").innerHTML =  "";
+document.getElementById("idNome2Baruka").innerHTML =  "Baruka Elfo do gelo";
+
+Kargalgan = 1;
+document.getElementById("idNome1Kargalgan").innerHTML =  "";
+document.getElementById("idNome2Kargalgan").innerHTML =  "Kargalgan";
+
+Yoo = 20;
+document.getElementById("idNome1Yoo").innerHTML =  "";
+document.getElementById("idNome2Yoo").innerHTML =  "Yoo Jin-Ho";
+document.getElementById("iditem1").innerHTML = "✅ Item: Peitoral do grande cavaleiro [+ 1 ponto de atributo adicionado em Força]";
+document.getElementById("iditem2").innerHTML = "✅ Item: Manopla do grande guerreiro [+ 1 ponto de atributo adicionado em Agilidade]";
+document.getElementById("iditem3").innerHTML = "✅ Item: Botas do grande Assassino [+ 2 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem4").innerHTML = "✅ Item: Luvas do grande Arqueiro [+ 2 ponto de atributo adicionado em Percepção]";
+document.getElementById("iditem5").innerHTML = "✅ Item: Anel do grande Mago [+ 3 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem6").innerHTML = "✅ Item: Saco de couro [+ 500 moedas de ouro adicionadas no seu inventário]";
+document.getElementById("iditem7").innerHTML = "✅ Habilidade: Perseverança [+ 3 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem8").innerHTML = "✅ Habilidade: Ataque Vital [+ 4 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem9").innerHTML = "✅ Habilidade: Artes Avançadas com Adagas [+ 4 pontos de atributos adicionados em Força]";
+document.getElementById("iditem10").innerHTML = "✅ Habilidade: Detectar [+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem11").innerHTML = "✅ Habilidade: Arremesso de Adaga [+ 5 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem12").innerHTML = "✅ Efeito: Orbe da Avareza - Desejo pela destruição [+ 5 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem14").innerHTML = "✅ Habilidade: Golpe Fatal[+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem15").innerHTML = "✅ Habilidade: Flame Spear desbloqueada [Aba ➜ Habilidades ➜ Healer e Magos]";
+document.getElementById("iditem16").innerHTML = "✅ Item: Veneno da Kasaka Azul de Presas Venenosas [Recupere 100% da sua vida]";
+document.getElementById("iditem19").innerHTML = "✅ Habilidade: Força de vontade [Recupere 100% da sua vida]";
+document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda [+ 3000 moedas de ouro adicionadas no seu inventário]";
+
+ HabilidadeLiberadaFlameSpear = 1;
+ document.getElementById("idCheckFlameSpear").innerHTML =  "⚠️ Habilidade: Flame Spear";
 
   /*INÍCIO IR PARA O Solo Leveling Arise from the Shadow*/
   var conteudo = document.getElementById("conteudo");
@@ -413,9 +580,9 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
  
   } 
   
-  else if (senhaR === "rei") {
-    mensagemR.innerHTML = "Código 'rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga";
-    alert("Código 'rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga");
+  else if (senhaR === "Rei") {
+    mensagemR.innerHTML = "Código 'Rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga";
+    alert("Código 'Rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga");
 
 
 
@@ -451,6 +618,7 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
 
 EqualizadoDoNivel = 42; /*Nível 42*/
 dia = 13;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
 RecompensaDiaria = 12;
 document.getElementById("idNivelDoRank").innerHTML = "Rank: S 💎";
  document.getElementById("idClasse").innerHTML = "Classe: Necromante [Monarca das Sombras]";
@@ -496,32 +664,148 @@ document.getElementById("idItemEspadaMonarcaDemonioAdquirida").innerHTML = "Espa
   cristal = 0;
   SomaDaPedraDeEssenciaParaMissaDiaria = 12;
  experienciaParaUsarNasHabilidades = 358; /*33 em estoque + 45 da Arrancada + 100 do Aquele que Superou a Adversidade + 80 da barra de mana + 100 do mestre das armas*/
- document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
 
-  Kandiaru = 2;
-  Goblin = 10;
-  Lycan = 20;
-  Kasaka = 1;
-  Insectoids = 5
-  Aranha = 1;
-  Cacadores = 6;
-  Cerberus = 1;
-  Kang = 1;
-  Igris = 3;
-  Magos = 2;
-  Ursos = 6;
-  Elfos = 1;
-  KinChul = 1;
-  Baruka = 2;
-  Kargalgan = 1;
-  Demonios = 1;
-  Vulcano = 1;
-  Metus = 1;
+document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
+document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
+document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao",).innerHTML = "";
+document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Rei Formiga [Boss na Dangeon Ilha de Jeju]";
+
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+Kasaka = 1;
+document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+Insectoids = 5
+document.getElementById("idNome1Insectoids").innerHTML =  "";
+document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
+
+Aranha = 1;
+document.getElementById("idNome1Buryura").innerHTML =  "";
+document.getElementById("idNome2Buryura").innerHTML =  "Buryura";
+
+Cacadores = 6;
+document.getElementById("idNome1Hwang").innerHTML =  "";
+document.getElementById("idNome2Hwang").innerHTML =  "Hwang Dong Suk e seu grupo";
+
+Cerberus = 1;
+document.getElementById("idNome1Cerberus").innerHTML =  "";
+document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+ 
+Kang = 1;
+document.getElementById("idNome1Kang").innerHTML =  "";
+document.getElementById("idNome2Kang").innerHTML =  "Mr. Kang";
+
+Igris = 3;
+document.getElementById("idNome1Igris").innerHTML =  "";
+document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
+
+Magos = 2;
+document.getElementById("idNome16Magos").innerHTML =  "";
+document.getElementById("idNome26Magos").innerHTML =  "6 Magos Necromantes";
+
+Ursos = 6;
+document.getElementById("idNome1Ursos").innerHTML =  "";
+document.getElementById("idNome2Ursos").innerHTML =  "Ursos de Gelo";
+
+Elfos = 1;
+document.getElementById("idNome1Elfos").innerHTML =  "";
+document.getElementById("idNome2Elfos").innerHTML =  "Elfos do gelo";
+
+KinChul = 1;
+document.getElementById("idNome1Chul").innerHTML =  "";
+document.getElementById("idNome2Chul").innerHTML =  "Kim Chul";
+
+Baruka = 2;
+document.getElementById("idNome1Baruka").innerHTML =  "";
+document.getElementById("idNome2Baruka").innerHTML =  "Baruka Elfo do gelo";
+
+Kargalgan = 1;
+document.getElementById("idNome1Kargalgan").innerHTML =  "";
+document.getElementById("idNome2Kargalgan").innerHTML =  "Kargalgan";
+
+Demonios = 1;
+document.getElementById("idNome1Demonios").innerHTML =  "";
+document.getElementById("idNome2Demonios").innerHTML =  "Demônios [Andares inferiores]";
+
+Vulcano = 1;
+document.getElementById("idNome1Vulcano").innerHTML =  "";
+document.getElementById("idNome2Vulcano").innerHTML =  "Vulcano Avarento [50º Andar]";
+
+Metus = 1;
+document.getElementById("idNome1Metus").innerHTML =  "";
+document.getElementById("idNome2Metus").innerHTML =  "Metus guía das almas [75º Andar]";
+
 Esil = 1;
+document.getElementById("idNome1Esil").innerHTML =  "";
+document.getElementById("idNome2Esil").innerHTML =  "Esil Radiru [80º Andar]";
+
 Baran = 1;
+document.getElementById("idNome1Baran").innerHTML =  "";
+document.getElementById("idNome2Baran").innerHTML =  "Monarca das Chamas Branca [100º Andar]";
+
 Enxame = 1;
+document.getElementById("idNome1Enxame").innerHTML =  "";
+document.getElementById("idNome2Enxame").innerHTML =  "Enxame de Formigas";
+
 Rainha = 1;
+document.getElementById("idNome1Rainha").innerHTML =  "";
+document.getElementById("idNome2Rainha").innerHTML =  "Rainha Formiga";
+
 Rei = 1;
+document.getElementById("idNome1Rei").innerHTML =  "";
+document.getElementById("idNome2Rei").innerHTML =  "Rei Formiga";
+
+Yoo = 20;
+document.getElementById("idNome1Yoo").innerHTML =  "";
+document.getElementById("idNome2Yoo").innerHTML =  "Yoo Jin-Ho";
+document.getElementById("iditem1").innerHTML = "✅ Item: Peitoral do grande cavaleiro [+ 1 ponto de atributo adicionado em Força]";
+document.getElementById("iditem2").innerHTML = "✅ Item: Manopla do grande guerreiro [+ 1 ponto de atributo adicionado em Agilidade]";
+document.getElementById("iditem3").innerHTML = "✅ Item: Botas do grande Assassino [+ 2 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem4").innerHTML = "✅ Item: Luvas do grande Arqueiro [+ 2 ponto de atributo adicionado em Percepção]";
+document.getElementById("iditem5").innerHTML = "✅ Item: Anel do grande Mago [+ 3 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem6").innerHTML = "✅ Item: Saco de couro [+ 500 moedas de ouro adicionadas no seu inventário]";
+document.getElementById("iditem7").innerHTML = "✅ Habilidade: Perseverança [+ 3 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem8").innerHTML = "✅ Habilidade: Ataque Vital [+ 4 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem9").innerHTML = "✅ Habilidade: Artes Avançadas com Adagas [+ 4 pontos de atributos adicionados em Força]";
+document.getElementById("iditem10").innerHTML = "✅ Habilidade: Detectar [+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem11").innerHTML = "✅ Habilidade: Arremesso de Adaga [+ 5 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem12").innerHTML = "✅ Efeito: Orbe da Avareza - Desejo pela destruição [+ 5 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem14").innerHTML = "✅ Habilidade: Golpe Fatal[+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem15").innerHTML = "✅ Habilidade: Flame Spear desbloqueada [Aba ➜ Habilidades ➜ Healer e Magos]";
+document.getElementById("iditem16").innerHTML = "✅ Item: Veneno da Kasaka Azul de Presas Venenosas [Recupere 100% da sua vida]";
+document.getElementById("iditem19").innerHTML = "✅ Habilidade: Força de vontade [Recupere 100% da sua vida]";
+document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda [+ 3000 moedas de ouro adicionadas no seu inventário]";
+
+ HabilidadeLiberadaFlameSpear = 1;
+ document.getElementById("idCheckFlameSpear").innerHTML =  "⚠️ Habilidade: Flame Spear";
+
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+document.getElementById("idCheckFragmentoDaAvoreDaVida").innerHTML =  "✅ Fragmento da árvore do mundo";
+document.getElementById("idCheckAguaNascenteDaFlorestaEcoante").innerHTML =  "✅ Água nascente da floresta ecoante";
+document.getElementById("idCheckSamguePurificadoMonarcaDemoniaco").innerHTML =  "✅ Sangue Purificado do Monarca Demoníaco";
 
   /*INÍCIO IR PARA O Solo Leveling Arise from the Shadow*/
   var conteudo = document.getElementById("conteudo");
@@ -544,8 +828,10 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
 
 
   }
-   /*............ INICIO DOS PONTOS PARA SE TORNAR DEUS TESTE MODE ROUBAR ..............*/
-  else if (senhaR === "deus") {
+  
+   /*............INÍCIO DOS PONTOS ATÉ DEUS ............*/
+
+  else if (senhaR === "Deus") {
     mensagemR.innerHTML = "Parabéns, agora você é Deus!!!";
     alert("Parabéns, agora você é Deus!!!");
 RastroDeSombra = 1000;
@@ -566,13 +852,13 @@ inteligenciaDasSombras = 0;
      AumentoDoNivelDaMana = 100;
     mana = 10000000;
     ouro = 50000000;
-    cristal = 3000000;
+    cristal = 10000000000;
     
 
     atributo = 10000;
-    SomaDosCristais =  31000;
-    SomaDaPocaoDeRecuperacao = 500;
-    SomaDaPocaoDeVida = 300;
+    SomaDosCristais =  30000;
+    SomaDaPocaoDeRecuperacao = 360;
+    SomaDaPocaoDeVida = 160;
 
     vida = 100;
     fadiga = 0;
@@ -591,7 +877,7 @@ Magos = 2;
 Kang = 1;
 Ursos = 6;
 KinChul = 1;
-Baruka = 0;
+Baruka = 2;
 Igris = 2;
 Metus = 1;
 Vulcano = 1;
@@ -603,9 +889,51 @@ Rei = 0;
 Enxame = 1;
 Yogumunt = 1;
 Yoo = 18;
+  }
+   /*............FIM DOS PONTOS ATÉ A LUTA DO REI FORMIGA ............*/
+
+    /*............INÍCIO DOS PONTOS ATÉ O RICO ............*/
+    else if (senhaR === "Rico") {
+    mensagemR.innerHTML = "Parabéns, agora você é rico!!!";
+    alert("Parabéns, agora você é Rico!!!");
+RastroDeSombra = 100000;
+dia = 1;
+RecompensaDiaria = 0;
+
+agilidadeDasSombras = 0;
+forcaDasSombras = 0;
+percepcaoDasSombras = 0;
+inteligenciaDasSombras = 0;
+
+     agilidade = 10; 
+  forca = 10;  
+  percepcao = 10; 
+  inteligencia = 10;
+    experienciaParaUsarNasHabilidades = 10000000000;
+  
+     AumentoDoNivelDaMana = 100;
+    mana = 100;
+    ouro = 5000000000;
+    cristal = 10000000000;
+    
+
+    atributo = 1000000;
+    SomaDosCristais =  30000;
+    SomaDaPocaoDeRecuperacao = 360;
+    SomaDaPocaoDeVida = 160;
+
+    vida = 100;
+    fadiga = 0;
+
+    SomaDaPresaDeLycan = 20;
+    FragmentoDaAvoreDaVida = 1000;
+AguaNascenteDaFlorestaEcoante = 0;
+SanguePurificadoDoMonarcaDemoniaco = 1;
+SomaDaPedraDeEssenciaParaMissaDiaria = 100;
 
   }
-  
+   /*............ FIM DOS PONTOS DO RICO ..............*/
+   
   else {
     mensagemR.innerHTML = "Código incorreto";
   }
@@ -937,7 +1265,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     if (dia === 2) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =
-        "Tenha 70 Cristais de Mana minerados: " + SomaDosCristais + "/70";
+        "Tenha 70 Cristais de Mana minerados [Dica: Adicione pontos em Percepção (Menu ➔ Atributos ➔ Percepção)]: " + SomaDosCristais + "/70";
     }
 
     if (dia === 3) {
@@ -989,14 +1317,14 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
       document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 30.000 Cristais de Mana minerados: " +
         SomaDosCristais +  "/30000";
     }
-     if (dia === 13) {
+     /* if (dia === 13) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 30.500 Cristais de Mana minerados: " +
         SomaDosCristais +  "/30500";
     }
       if (dia === 14) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 31.000 Cristais de Mana minerados: " +
         SomaDosCristais +  "/31000";
-    }
+    }*/
 
     document.getElementById("idcristal").innerHTML ="Cristais de Mana no Inventário: " + cristal;
 
@@ -1009,7 +1337,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     progresso.setAttribute("style", "width: " + fadiga + "%");
   } else {
-    document.getElementById("idminerarcristal").innerHTML = "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a missão diária para regarregar]";
+    document.getElementById("idminerarcristal").innerHTML = "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar]";
   }
 }
 /* Fim da função minerar cristais */
@@ -1152,7 +1480,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     if (dia === 2) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =
-        "Tenha 70 Cristais de Mana minerados: " + SomaDosCristais + "/70";
+        "Tenha 70 Cristais de Mana minerados [Dica: Adicione pontos em Percepção (Menu ➔ Atributos ➔ Percepção)]: " + SomaDosCristais + "/70";
     }
 
     if (dia === 3) {
@@ -1210,7 +1538,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
         SomaDosCristais +
         "/30000";
     }
-     if (dia === 13) {
+      /* if (dia === 13) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 30.500 Cristais de Mana minerados: " +
         SomaDosCristais +  "/30500";
     }
@@ -1218,7 +1546,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
        if (dia === 14) {
       document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 31.000 Cristais de Mana minerados: " +
         SomaDosCristais +  "/31000";
-    }
+    }*/
 
     document.getElementById("idcristal").innerHTML =      "Cristais de Mana no Inventário: " + cristal;
 
@@ -1232,7 +1560,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     progresso.setAttribute("style", "width: " + fadiga + "%");
   } if(fadiga > 99) {
-    document.getElementById("idminerarcristal").innerHTML =   "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a missão diária para regarregar]";
+    document.getElementById("idminerarcristal").innerHTML =   "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar]";
   }
   
 }
@@ -1390,7 +1718,7 @@ setTimeout(function(seta) {
         SomaDaPocaoDeVida +
         "/160";
     }
-    if (dia === 13) {
+    /*if (dia === 13) {
       document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML =
         "Faça a compra de 200 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
@@ -1401,7 +1729,7 @@ setTimeout(function(seta) {
         "Faça a compra de 300 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/300";
-    }
+    }*/
 
   } else {
     document.getElementById("idRetornoCompraPocaoVida").innerHTML =
@@ -1798,7 +2126,7 @@ function misaoDiaria() {
   }
 
   else if (fadiga > 99 && RecompensaDaMisaoDiaria === 0){
-    document.getElementById("idtreino").innerHTML = "⚠️ Você está com a Fadiga no máximo";
+ document.getElementById("idtreino").innerHTML = "⚠️ Você está com a Fadiga no máximo [Para recarregar a Fadiga você pode realizar a Tarefa diária(Recuperação Total da Fadiga) ou comprar uma Poção de Fadiga na Loja de itens.]";
   }
 
   else if (treino < 100 && RecompensaDaMisaoDiaria === 0 && fadiga < 100 && TurnoDeLutaCentopeia === 0) {
@@ -1844,6 +2172,7 @@ function misaoDiaria() {
     } 
   }  
 }
+
 /*Fim da função Treinamento de força*/
 
 /*início da função Objetivo do dia(MISSÃO DIÁRIA)*/
@@ -1873,8 +2202,7 @@ function misaoDiariaReceberRecompensa() {
 
       document.getElementById("idRetornoMissaoDiaria").innerHTML = "";
 
-      document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =
-        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+      document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =    "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia [Dica: tente lutar contra as Cetopeias gigantes]";
 
       fadiga = 0;
       document.getElementById("idfadiga").innerHTML =
@@ -1900,7 +2228,7 @@ function misaoDiariaReceberRecompensa() {
         "Objetivo do dia: " + dia;
 
       document.getElementById("idMissaoDiariaCristais").innerHTML =
-        "Tenha 70 Cristais de Mana minerados: " + SomaDosCristais + "/70";
+        "Tenha 70 Cristais de Mana minerados [Dica: Adicione pontos em Percepção (Menu ➔ Atributos ➔ Percepção)]: " + SomaDosCristais + "/70";
   alert(
         "O jogo começou, boa sorte!",
       );
@@ -2545,8 +2873,6 @@ function misaoDiariaReceberRecompensa() {
       dia = 13;
       document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
 
-      document.getElementById("idMissaoDiariaCristais").innerHTML = "Tenha 30.500 Cristais de Mana minerados: " + SomaDosCristais + "/30500";
-
         ouro = ouro + 500;
         document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
 
@@ -2554,11 +2880,10 @@ function misaoDiariaReceberRecompensa() {
         "Receba as recompensas do dia 12 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa com 500 Moedas]",
       );
 
-      document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "Faça a compra de 400 Poções de Fadiga na loja: " + SomaDaPocaoDeRecuperacao +  "/400";
-
-      document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 200 Poções de Vida na loja: " + SomaDaPocaoDeVida +  "/200";
-
-      document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Baruka Elfo do gelo [Boss na Dangeon Portal Vermelho]";
+   document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao",).innerHTML = "";
+document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Baruka Elfo do gelo [Boss na Dangeon Portal Vermelho]";
 
       treino = 0;
       TurnoDeLutaCentopeia = 0;
@@ -2571,12 +2896,9 @@ function misaoDiariaReceberRecompensa() {
 
     if (dia === 13) {
     if (
-         SomaDaPocaoDeVida > 199 &&
-      SomaDosCristais > 30499 &&
       RecompensaDiaria === 12 &&
       treino === 100 &&
-      Baruka === 2 &&
-      SomaDaPocaoDeRecuperacao > 399
+      Baruka === 2
     ) {
       RecompensaDiaria = 13;
 
@@ -2594,7 +2916,7 @@ function misaoDiariaReceberRecompensa() {
       dia = 14;
       document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
 
-      document.getElementById("idMissaoDiariaCristais").innerHTML = "Tenha 31.000 Cristais de Mana minerados: " + SomaDosCristais + "/31000";
+      
 
         ouro = ouro + 100;
         document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
@@ -2602,10 +2924,6 @@ function misaoDiariaReceberRecompensa() {
       alert(
         "Receba as recompensas do dia 13 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa com 100 Moedas]",
       );
-
-      document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "Faça a compra de 500 Poções de Fadiga na loja: " + SomaDaPocaoDeRecuperacao +  "/500";
-
-      document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 300 Poções de Vida na loja: " + SomaDaPocaoDeVida +  "/300";
 
       document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Rei Formiga [Boss na Dangeon Ilha de Jeju]";
 
@@ -2618,14 +2936,11 @@ function misaoDiariaReceberRecompensa() {
     }
   }
 
-  if (dia === 14) {
+if (dia === 14) {
     if (
-       SomaDaPocaoDeVida > 299 &&
-      SomaDosCristais > 30999 &&
       RecompensaDiaria === 13 &&
       treino === 100 &&
-      Rei === 1 &&
-      SomaDaPocaoDeRecuperacao > 499
+      Rei === 1
     ) {
       RecompensaDiaria = 14;
 
@@ -2667,15 +2982,16 @@ function misaoDiariaReceberRecompensa() {
     }
   }
 
-  if (dia === 15) {
+ if (dia === 15) {
     if (
+      RecompensaDiaria === 14 &&
        treino === 100 &&
       Antares === 1 
     ) {
       RecompensaDiaria = 15;
 
 
-      document.getElementById("idRetornoMissaoDiaria").innerHTML = "✨ Você zerou a Missão Diária!! ✨";
+      document.getElementById("idRetornoMissaoDiaria").innerHTML = "✨ Você zerou a Tarefa Diária!! ✨";
 
 
       dia = 16;
@@ -2686,7 +3002,7 @@ document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "";
 
         
 
-      alert("✨ Você zerou a Missão Diária!! ✨",
+      alert("✨ Você zerou a Tarefa Diária!! ✨",
       );
 
       document.getElementById(
@@ -2700,10 +3016,10 @@ document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "";
     document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =
         "";
 
-      document.getElementById("idtreino").innerHTML = "Você zerou a Missão Diária!!";
+      document.getElementById("idtreino").innerHTML = "Você zerou a Tarefa Diária!!";
     } else {
       document.getElementById("idRetornoMissaoDiaria").innerHTML =
-        "Missão do dia 15 incompleta";
+        "Tarefa do dia 15 incompleta";
     }
   }
 
@@ -2931,7 +3247,7 @@ function LutaContraKandiaruBotao() {
     document.getElementById("idfadiga").innerHTML = "🪫Fadiga: " + fadiga + "%";
 
     document.getElementById("idQuadroDeRetornoKandiaru").innerHTML =
-      "✨ VITÓRIA ✨ Você sobreviveu ao Templo de Cartenon [Recompensas: Habilidade Saúde e longevidade -  4 pontos distribuidos em seus atributos]";
+      "✨ VITÓRIA ✨ Você sobreviveu ao Templo de Cartenon [Recompensas: Habilidade Saúde e longevidade (Menu ➔ Habilidades ➔ Healer e Mago ➔ Saúde e longevidade) -  4 pontos distribuidos em seus atributos]";
 
 document.getElementById("idCheckSaudelongevidade").innerHTML =
       "⚠️ Habilidade: Saúde e longevidade";
@@ -3090,7 +3406,6 @@ function LutaContraKandiaru1Botao() {
   }
 }
 /*FIM DA LUTA DO Kandiaru1*/
-
 
 /*INÍCIO DO BOTÃO ANALISAR LUTA Kandiaru1*/
 function AnalisarLutaContraKandiaru1Botao() {
@@ -3376,7 +3691,6 @@ atualizarGrafico(dados);
       "Você não possui nenhum Ponto de atributo disponível";
   }
 }
-
 
 /* INÍCIO DA HABILIDADE SAÚDE E LONGEVIDADE */
 function FuncaoSaudeElogenvidade() {
@@ -4093,8 +4407,11 @@ function LutaContraKasakaBotao() {
       "💎 Pedras de Essência: " + SomaPedraDeEssenciaKasaka;
     document.getElementById("idpedrainventario").innerHTML = "⚠️ Pedras de Essência: " + PedraDeEssencia;
 
-     document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome1Kasaka").innerHTML =  "";
 document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
 
     document.getElementById("idQuadroDeRetornoKasaka").innerHTML =
       "✨ VITÓRIA ✨ Você derrotou a Kasaka [Recompensas: 4 pontos de experiência - 4 pontos distribuidos em seus atributos - 1 Pedra de essência - Adaga Presa Venenosa de Kasaka - Habilidade: Arrancada]";
@@ -4390,6 +4707,9 @@ document.getElementById("idQuadroDeRetornoGolen").innerHTML = "Você optou por l
 
  document.getElementById("idNome1Golem").innerHTML =  "";
 document.getElementById("idNome2Golem").innerHTML =  "Golem de pedra";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
 
     SomaDaPedraDeEssenciaParaMissaDiaria =   SomaDaPedraDeEssenciaParaMissaDiaria + 1;
 
@@ -5055,7 +5375,7 @@ atualizarGrafico(dados);
         document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML =
           "Faça a compra de 360 Poções de Fadiga na loja: " +  SomaDaPocaoDeRecuperacao + "/360";
       }
-       if (dia === 13) {
+        /*if (dia === 13) {
         document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML =
           "Faça a compra de 400 Poções de Fadiga na loja: " +  SomaDaPocaoDeRecuperacao + "/400";
       }
@@ -5063,7 +5383,7 @@ atualizarGrafico(dados);
       if (dia === 14) {
         document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML =
           "Faça a compra de 500 Poções de Fadiga na loja: " +  SomaDaPocaoDeRecuperacao + "/500";
-      }
+      }*/
 
     } else {
       document.getElementById("idRetornoCompraPocaoRecuperacao").innerHTML =
@@ -7853,7 +8173,7 @@ if (FloracaoCompletaNivel2EmUso === 1){
    alert("Parabéns você ganhou um novo Título", );
           alert("✨ Novo título: Aquele que Superou a Adversidade  ✨", );
           alert("📢 ATENÇÃO 📢 Você achou o primeiro código de salvamento para usar na Taça da Reencarnação!", );
-          alert("Código do Igris: trono", );
+          alert("Código do Igris: Trono", );
 
           document.getElementById("idNome1Igris").innerHTML =  "";
 document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
@@ -12217,7 +12537,7 @@ if (AdagasSombraLuaNivel2EmUso === 1){
      document.getElementById("idRetornoAdagasSombraLuaNoStatus").innerHTML = " + 50"; 
       document.getElementById("idRetornoAdagasSombraLuaNoStatus2").innerHTML = " + 50";
 }
-/*FIM DO REMOVER REMOVER ECLIPSE LUNAR */
+/*FIM DO REMOVER ECLIPSE LUNAR */
 
     /*INÍCIO DO REMOVER FLORAÇÃO COMPLETA DA FLOR DE AMEIXEIRA */
 if (FloracaoCompletaNivel2EmUso === 1){
@@ -13116,7 +13436,7 @@ document.getElementById("idNome2Kargalgan").innerHTML =  "Kargalgan";
 
        
           alert("📢 ATENÇÃO 📢 Você achou o segundo código de salvamento para usar na Taça da Reencarnação!", );
-          alert("Código do Kargalgan: hino", );
+          alert("Código do Kargalgan: Hino", );
      
             /*INÍCIO DO REMOVER ECLIPSE LUNAR */
 if (AdagasSombraLuaNivel2EmUso === 1){
@@ -14642,8 +14962,8 @@ function AnalisarLutaContraBaranBotao() {
    if (percepcao < 491) { document.getElementById( "idPercepcaoBaran").innerHTML = "👀 Percepção: 490/" +  percepcao + " ❌";  }
   if (percepcao > 490) {document.getElementById("idPercepcaoBaran").innerHTML =  "👀 Percepção: 490/" +  percepcao + " ✅";  }
  
-  if (inteligencia < 431) {document.getElementById( "idInteligenciaBaran").innerHTML = "🧠 Inteligência: 440/" +  inteligencia + " ❌"; }
-  if (inteligencia > 430) { document.getElementById( "idInteligenciaBaran").innerHTML = "🧠 Inteligência: 440/" + inteligencia + " ✅"; }
+  if (inteligencia < 441) {document.getElementById( "idInteligenciaBaran").innerHTML = "🧠 Inteligência: 440/" +  inteligencia + " ❌"; }
+  if (inteligencia > 440) { document.getElementById( "idInteligenciaBaran").innerHTML = "🧠 Inteligência: 440/" + inteligencia + " ✅"; }
  
  }
  
@@ -15183,7 +15503,6 @@ document.getElementById("idAlertaNoMenuInventario").innerHTML = "Inventário";
     document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "Taça da Reencarnação - Ferramenta de Deus";
 }
 /* Fim da função Taça da Reencarnação - Ferramenta de Deus */
-
 
 /*Início da habilidade Extração de Sombras Kaisel */
 function FuncaoExtracaoKaisel() {
@@ -20042,7 +20361,7 @@ document.getElementById("idTituloAlerta").innerHTML = "⚠️";
  document.getElementById("idTituloRetornoOcacadorMaisForteDaHumanidade",).innerHTML = "";
 
       alert("📢 ATENÇÃO 📢 Você achou o terceiro código de salvamento para usar na Taça da Reencarnação!", );
-          alert("Código do Rei Formiga: rei", );
+          alert("Código do Rei Formiga: Rei", );
     
        
 
