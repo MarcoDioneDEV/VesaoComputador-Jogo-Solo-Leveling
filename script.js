@@ -272,7 +272,7 @@ document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtivida
   ouro = 1271; /*806 + adaga(50) + espada(100) + Escudo(115) + Assassina de cavaleiros(200)*/
     document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
 
-    document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia [Dica: tente lutar contra as Cetopeias gigantes]";
+    document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
 
   SomaDaPocaoDeVida = 127;
    document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 130 Poções de Vida na loja: " + SomaDaPocaoDeVida + "/130";
@@ -1131,7 +1131,7 @@ function funcaominerarcristal() {
 
 
   /* Início apagar as mensagem de RETORNO */
-  document.getElementById("idRetornoMissaoDiaria").innerHTML = "Ao realizar a Tarefa, clique na imagem para receber as recompensas";   /* Remover Missão diária */
+  document.getElementById("idRetornoMissaoDiaria").innerHTML = "AO REALIZAR A TAREFA, CLIQUE NA IMAGEM PARA RECEBER AS RECOMPENSAS!";   /* Remover Missão diária */
   document.getElementById("idatributopercepcao").innerHTML = ""; /* Remover Pontos de atributo */
   document.getElementById("idminerarcristal").innerHTML = "";  /* Remover Mensagem que mostra quantos Cristais foram minerados */
   document.getElementById("idTituloAlerta").innerHTML = ""; /* Remover Alerta dos títulos */
@@ -1337,7 +1337,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     progresso.setAttribute("style", "width: " + fadiga + "%");
   } else {
-    document.getElementById("idminerarcristal").innerHTML = "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar]";
+    document.getElementById("idminerarcristal").innerHTML = "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar (Menu ➔ Loja ➔ Poções ➔ Poção de Fadiga)]";
   }
 }
 /* Fim da função minerar cristais */
@@ -1349,7 +1349,7 @@ function funcaominerarcristalAteAfadigaSer100() {
   "⚠️ Inventário";
 
   /* Início apagar as mensagem de RETORNO */
-  document.getElementById("idRetornoMissaoDiaria").innerHTML = "Ao realizar a Tarefa, clique na imagem para receber as recompensas";   /* Remover Missão diária */
+  document.getElementById("idRetornoMissaoDiaria").innerHTML = "AO REALIZAR A TAREFA, CLIQUE NA IMAGEM PARA RECEBER AS RECOMPENSAS!";   /* Remover Missão diária */
   document.getElementById("idatributopercepcao").innerHTML = ""; /* Remover Pontos de atributo */
   document.getElementById("idminerarcristal").innerHTML = "";  /* Remover Mensagem que mostra quantos Cristais foram minerados */
   document.getElementById("idTituloAlerta").innerHTML = ""; /* Remover Alerta dos títulos */
@@ -1435,6 +1435,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
       atributo = atributo + 1;
       alert("Parabéns você ganhou um novo Título e ganhou 1 Ponto de atributo.",);
        alert("✨ Novo título: Entusiasta da Mineração  ✨",);
+        alert("Dica: Novo Título disponível - Para trocar de Título vá na aba Títulos e Classe",);
 
       document.getElementById("idtitulo").innerHTML = "Novo Título disponível - Para trocar de Título vá na aba Classe e Títulos";
 
@@ -1454,6 +1455,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
       atributo = atributo + 1;
       alert("Parabéns você ganhou um novo Título e ganhou 1 Ponto de atributo.",);
        alert(" ✨ Novo título: Lorde da Mineração  ✨",);
+        alert("Dica: Novo Título disponível - Para trocar de Título vá na aba Títulos e Classe",);
      
       document.getElementById("idtitulo").innerHTML =  "Novo Título disponível - Para trocar de Título vá na aba Classe e Títulos";
 
@@ -1560,7 +1562,7 @@ document.getElementById("idRetornoExtracaoBeru").innerHTML = ""; /*  Beru - Rei 
 
     progresso.setAttribute("style", "width: " + fadiga + "%");
   } if(fadiga > 99) {
-    document.getElementById("idminerarcristal").innerHTML =   "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar]";
+    document.getElementById("idminerarcristal").innerHTML =   "Sua Fadiga está em 100% [Compre poção de fadiga na loja de itens ou realize a Tarefa diária para regarregar (Menu ➔ Loja ➔ Poções ➔ Poção de Fadiga)]";
   }
   
 }
@@ -2126,7 +2128,7 @@ function misaoDiaria() {
   }
 
   else if (fadiga > 99 && RecompensaDaMisaoDiaria === 0){
- document.getElementById("idtreino").innerHTML = "⚠️ Você está com a Fadiga no máximo [Para recarregar a Fadiga você pode realizar a Tarefa diária(Recuperação Total da Fadiga) ou comprar uma Poção de Fadiga na Loja de itens.]";
+ document.getElementById("idtreino").innerHTML = "⚠️ Você está com a Fadiga no máximo [Para recarregar a Fadiga você pode realizar a Tarefa diária(Recuperação Total da Fadiga) ou comprar uma Poção de Fadiga na Loja de itens  (Menu ➔ Loja ➔ Poções ➔ Poção de Fadiga).]";
   }
 
   else if (treino < 100 && RecompensaDaMisaoDiaria === 0 && fadiga < 100 && TurnoDeLutaCentopeia === 0) {
@@ -2145,6 +2147,7 @@ function misaoDiaria() {
       treino = 100;
   
       document.getElementById("idtreino").innerHTML = "✅ Treino: 100% ";
+       document.getElementById("idRetornoMissaoDiariaTreino").innerHTML = "Treino concluído";
   
       document.getElementById("idfadiga").innerHTML = "🪫Fadiga: " + fadiga + "%";
   
@@ -2202,7 +2205,7 @@ function misaoDiariaReceberRecompensa() {
 
       document.getElementById("idRetornoMissaoDiaria").innerHTML = "";
 
-      document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =    "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia [Dica: tente lutar contra as Cetopeias gigantes]";
+      document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =    "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
 
       fadiga = 0;
       document.getElementById("idfadiga").innerHTML =
@@ -2230,10 +2233,13 @@ function misaoDiariaReceberRecompensa() {
       document.getElementById("idMissaoDiariaCristais").innerHTML =
         "Tenha 70 Cristais de Mana minerados [Dica: Adicione pontos em Percepção (Menu ➔ Atributos ➔ Percepção)]: " + SomaDosCristais + "/70";
   alert(
-        "O jogo começou, boa sorte!",
+        "🎯 O jogo começou, boa sorte!",
       );
       alert(
         "Receba as recompensas do dia 1 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa(3 moedas de ouro)]",
+      );
+      alert(
+        "Dica: Na aba Atributos, adicione pontos no atributo Percepção para minerar mais Cristais",
       );
     } else {
       document.getElementById("idRetornoMissaoDiaria").innerHTML =
@@ -2268,7 +2274,7 @@ function misaoDiariaReceberRecompensa() {
         "Tenha 400 Cristais de Mana minerados: " + SomaDosCristais + "/400";
 
       alert(
-        "Receba as recompensas do dia 2 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 2 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2277,6 +2283,11 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 20 Poções de Fadiga na loja: " +
         SomaDaPocaoDeRecuperacao +
         "/20";
+
+          document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
 
       RecompensaDaMisaoDiaria = 0;
       treino = 0;
@@ -2320,7 +2331,10 @@ function misaoDiariaReceberRecompensa() {
         "Tenha 700 Cristais de Mana minerados: " + SomaDosCristais + "/700";
 
       alert(
-        "Receba as recompensas do dia 3 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 3 [3 Pontos de atributos - Recuperação total da Fadiga]",
+      );
+        alert(
+        "Dica: Nas Dangeons você pode batalhar com os inimigos e perder vida, por exemplo com as Estátuas na Dangeon Dupla",
       );
 
       document.getElementById(
@@ -2334,6 +2348,11 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 5 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/5 [Dica: Nas Dangeons você pode batalhar com os inimigos e perder vida, por exemplo com as Estátuas na Dangeon Dupla]";
+
+          document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
 
       treino = 0;
       TurnoDeLutaCentopeia = 0;
@@ -2378,7 +2397,7 @@ function misaoDiariaReceberRecompensa() {
         "Tenha 1500 Cristais de Mana minerados: " + SomaDosCristais + "/1500";
 
       alert(
-        "Receba as recompensas do dia 4 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 4 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2392,7 +2411,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 10 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/10";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2440,7 +2462,7 @@ function misaoDiariaReceberRecompensa() {
         "/10 [As pedras de essência são obtidas ao derrotar monstros, por exemplo os Goblins na Dangeon Eminete]";
 
       alert(
-        "Receba as recompensas do dia 5 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 5 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2454,7 +2476,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 20 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/20";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2512,11 +2537,17 @@ function misaoDiariaReceberRecompensa() {
         SomaDaPocaoDeRecuperacao +
         "/150";
 
+               document.getElementById("idRetornoMissaoDiariaTreino").innerHTML =
+         "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia [Dica: tente lutar contra as Cetopeias gigantes]";
+
       document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML =
         "Faça a compra de 50 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/50";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2573,7 +2604,7 @@ function misaoDiariaReceberRecompensa() {
         "/12";
 
       alert(
-        "Receba as recompensas do dia 7 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 7 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2587,7 +2618,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 60 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/60";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2637,7 +2671,7 @@ function misaoDiariaReceberRecompensa() {
       document.getElementById("idMissaoDiariaPresaDeLycan").innerHTML = "";
 
       alert(
-        "Receba as recompensas do dia 8 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 8 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2653,7 +2687,10 @@ function misaoDiariaReceberRecompensa() {
         "/125";
 
       document.getElementById("idMissaoDiariaPedrasDeEssencia").innerHTML = "";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2700,7 +2737,7 @@ function misaoDiariaReceberRecompensa() {
 
 
       alert(
-        "Receba as recompensas do dia 9 [3 Pontos de atributos - Recuperação total da Fadiga - Caixa misteriosa vazia]",
+        "Receba as recompensas do dia 9 [3 Pontos de atributos - Recuperação total da Fadiga]",
       );
 
       document.getElementById(
@@ -2714,7 +2751,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 130 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/130";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2775,7 +2815,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 150 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/150";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2838,7 +2881,10 @@ function misaoDiariaReceberRecompensa() {
         "Faça a compra de 160 Poções de Vida na loja: " +
         SomaDaPocaoDeVida +
         "/160";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2884,7 +2930,10 @@ function misaoDiariaReceberRecompensa() {
 document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
 document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao",).innerHTML = "";
 document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Baruka Elfo do gelo [Boss na Dangeon Portal Vermelho]";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2926,7 +2975,10 @@ document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Baruka
       );
 
       document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Rei Formiga [Boss na Dangeon Ilha de Jeju]";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -2972,7 +3024,10 @@ if (dia === 14) {
       document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
 
       document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Antares - Rei dos Dragões - Monarca da Destruição [Boss Final - Arco dos Monarcas: A luta entre Governantes e Monarcas]";
-
+  document.getElementById(
+        "idRetornoMissaoDiariaTreino",
+      ).innerHTML =
+        "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
       treino = 0;
       TurnoDeLutaCentopeia = 0;
       RecompensaDaMisaoDiaria = 0;
@@ -3318,7 +3373,7 @@ function AnalisarLutaContraKandiaruBotao() {
 
   if (inteligencia < 12) {
     document.getElementById("idInteligenciaKandiaru").innerHTML =
-      "🧠 Inteligência: 11/" + inteligencia + " ❌ - Melhore seu Atributo Inteligência na Aba Atributos";
+      "🧠 Inteligência: 11/" + inteligencia + " ❌ - Melhore seu Atributo Inteligência na Aba Atributos (Menu ➔ Atributos ➔ Inteligência: distribuir pontos)";
   }
 
   if (inteligencia > 11) {
@@ -3476,7 +3531,7 @@ function AnalisarLutaContraKandiaru2Botao() {
 
    if (inteligencia < 11) {
     document.getElementById("idInteligenciaKandiaru2").innerHTML =
-      "🧠 Inteligência: 10/" + inteligencia + " ❌ - Melhore seu Atributo Inteligência na Aba Atributos";
+      "🧠 Inteligência: 10/" + inteligencia + " ❌ - Melhore seu Atributo Inteligência na Aba Atributos (Menu ➔ Atributos ➔ Inteligência: distribuir pontos)";
   }
 
   if (inteligencia > 10) {
@@ -5658,6 +5713,7 @@ else if (
       VitoriaContraAsCentopeias = 1;
         document.getElementById("idAlertaNoMenuHabilidade").innerHTML =
           "⚠️ Habilidade";
+           document.getElementById("idRetornoMissaoDiariaTreino").innerHTML = "Treino concluído";
   
               /*INÍCIO DO REMOVER ECLIPSE LUNAR */
 if (AdagasSombraLuaNivel2EmUso === 1){
@@ -6084,7 +6140,8 @@ else if (FuncaoAqueleQueSuperouAdversidadeUplevel2 === 1){
   
       document.getElementById("idQuadroDeRetornoCentopeias").innerHTML =
         "☠️ DERROTA ☠️ - [Recompensa: 2 pontos de experiência]";
-  
+   document.getElementById("idRetornoMissaoDiariaTreino").innerHTML = "Treino concluído";
+
         experienciaCentopeias = experienciaCentopeias + 2;
         experienciaParaUsarNasHabilidades = experienciaParaUsarNasHabilidades + 2;
         document.getElementById("idexperienciaCentopeias").innerHTML = "🏆 Experiência: " + experienciaCentopeias;
@@ -6118,7 +6175,7 @@ else if (FuncaoAqueleQueSuperouAdversidadeUplevel2 === 1){
   
     if (vida < 50) {
       document.getElementById("idVidaCentopeias").innerHTML =
-        "❤️ Vida: 50%/" + vida + "%" + " ❌";
+        "❤️ Vida: 50%/" + vida + "%" + " ❌"  + " - Para repor a Vida, vá em Loja ➔ Poções ➔ Poção de Vida";
     }
   
     if (vida > 49) {
@@ -6128,7 +6185,7 @@ else if (FuncaoAqueleQueSuperouAdversidadeUplevel2 === 1){
   
     if (fadiga > 50) {
       document.getElementById("idFadigaCentopeias").innerHTML =
-        "🪫Fadiga: 50%/" + fadiga + "%" + " ❌";
+        "🪫Fadiga: 50%/" + fadiga + "%" + " ❌" + " - Para repor a Fadiga, vá em Loja ➔ Poções ➔ Poção de Fadiga";
     }
   
     if (fadiga < 51) {
@@ -6138,7 +6195,7 @@ else if (FuncaoAqueleQueSuperouAdversidadeUplevel2 === 1){
   
     if (agilidade < 51) {
       document.getElementById("idAgilidadeCentopeias").innerHTML =
-        "🦵 Agilidade: 50/" + agilidade + " ❌";
+        "🦵 Agilidade: 50/" + agilidade + " ❌" + " - Melhore seu Atributo agilidade na Aba Atributos";
     }
   
     if (agilidade > 50) {
@@ -6153,7 +6210,7 @@ else if (FuncaoAqueleQueSuperouAdversidadeUplevel2 === 1){
   
     if (forca < 51) {
       document.getElementById("idForcaCentopeias").innerHTML =
-        "💪 Força: 50/" + forca + " ❌";
+        "💪 Força: 50/" + forca + " ❌"  + " - Melhore seu Atributo força na Aba Atributos";
     }
 
 
