@@ -470,12 +470,12 @@ background-color: transparent;
   width: 200px;
   height: 20px;
   border-radius: 10px;
-  background-color: #4d00c4;
+  background-color: #d308f5;
 }
 .barraMana div {
   height: 100%;
   border-radius: 10px;
-  background-color: #d308f5;
+  background-color:  #4d00c4;
   transition: all 300ms;
 }
 
@@ -1604,4 +1604,5 @@ border-radius: 10px;
   box-shadow: 0 0 20px rgb(167, 22, 207); /* Brilho rosa */
 }
 /*fim dos vagalumes*/
+
 
