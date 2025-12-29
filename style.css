@@ -1,3 +1,18 @@
+/* INÍCIO DO AUDIO */
+.audio-player {
+    width: 300px;
+    border-radius: 12px;
+    background-color: #3f4553;
+    padding: 6px;
+}
+
+.audio-player::-webkit-media-controls-play-button {
+    background-color: #22c55e;
+    border-radius: 50%;
+}
+
+/* FIM DO AUDIO */
+
 .sumario{
   font-size: 20px;
 }
