@@ -2200,6 +2200,7 @@ function misaoDiariaReceberRecompensa() {
   /* Fim apagar as mensagem de RETORNO */
 
   if (dia === 1) {
+    
     if (SomaDosCristais > 9 && RecompensaDiaria === 0) {
       RecompensaDiaria = 1;
 
@@ -2244,6 +2245,8 @@ function misaoDiariaReceberRecompensa() {
     } else {
       document.getElementById("idRetornoMissaoDiaria").innerHTML =
         "Missão do dia 1 incompleta";
+
+       
     }
   }
 
@@ -2774,6 +2777,7 @@ function misaoDiariaReceberRecompensa() {
     ) {
       RecompensaDiaria = 10;
 
+
       document.getElementById("idRetornoMissaoDiaria").innerHTML = "";
 
       fadiga = 0;
@@ -3044,7 +3048,6 @@ if (dia === 14) {
       Antares === 1 
     ) {
       RecompensaDiaria = 15;
-
 
       document.getElementById("idRetornoMissaoDiaria").innerHTML = "✨ Você zerou a Tarefa Diária!! ✨";
 
@@ -23300,10 +23303,14 @@ const config = {
 
 const radarChart = new Chart(ctx, config);
 
-
 function atualizarGrafico(dados) {
   radarChart.data.datasets[0].data = [dados.agilidade, dados.forca, dados.percepcao, dados.inteligencia];
   radarChart.update();
 }
 /*FIM GRÁFICO */
 
+
+
+
+
+   
