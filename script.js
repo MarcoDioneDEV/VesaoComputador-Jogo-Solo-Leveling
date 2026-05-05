@@ -208,11 +208,112 @@ document.getElementById("enviarR").addEventListener("click", function() {
   var senhaR = document.getElementById("senhaR").value;
   var mensagemR = document.getElementById("mensagemR");
 
-  if (senhaR === "Trono") {
+      /*............INÍCIO DOS PONTOS ATÉ A LUTA DO LYCAN ............*/
+  if (senhaR === "Presa") {
+    mensagemR.innerHTML = "Código 'Presa' foi inserido: A linha do tempo será reescrita até a luta com o Lycan";
+    alert("O código 'Presa' foi inserido: A linha do tempo será reescrita até a luta com o Lycan");
+
+   document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
+
+  mana = 20;
+  document.getElementById("idAumentoDoNivelDaMana").innerHTML =  "🪄 Mana: " + mana + "%/" + AumentoDoNivelDaMana + "%";
+  progresso3.setAttribute("style", "width: " + mana + "%");
+
+  fadiga = 0;
+  document.getElementById("idfadiga").innerHTML = "🪫Fadiga: " + fadiga + "%";
+  progresso.setAttribute("style", "width: " + fadiga + "%");
+
+  vida = 100;
+  progresso2.setAttribute("style", "width: " + vida + "%");
+  document.getElementById("idvida").innerHTML = "❤️ Vida: " + vida + "%";
+
+  atributo = 5;
+  document.getElementById("idatributo").innerHTML =    "Disponíveis: " + atributo;
+
+  agilidade = 51; 
+  forca = 47;  /*15 + 5 + 47 = 67*/
+  percepcao = 47; /*10 + 47 = 57*/
+  inteligencia = 43;
+    document.getElementById("idagilidade").innerHTML =  "🦵 Agilidade: " + agilidade;
+    document.getElementById("idforca").innerHTML = "💪 Força: " + forca;
+    document.getElementById("idpercepcao").innerHTML =  "👀 Percepção: " + percepcao;
+    document.getElementById("idinteligencia").innerHTML =   "🧠 Inteligência: " + inteligencia;
+  const dados = { agilidade, forca, percepcao, inteligencia,}; atualizarGrafico(dados); /*FIM DO ATUALIZAR GRÁFICO*/
+
+
+EqualizadoDoNivel = 21; /*Nível 21*/
+dia = 7;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
+RecompensaDiaria = 6;
+document.getElementById("idNivelDoRank").innerHTML = "Rank: E ⭐";
+document.getElementById("idnivel").innerHTML ="Nível: " + EqualizadoDoNivel;
+
+TituloLordeDaMineracaoEstaEmUso = 1;
+TituloEntusiastaEstaEmUso = 1;
+document.getElementById("idCheckEntusiasta").innerHTML =  "Título: Entusiata da Mineração";
+document.getElementById("idCheckLordeDaMineracao").innerHTML = "Título: Lorde da Mineração";
+ document.getElementById("idCheckGoblins").innerHTML =   "Título: Exterminador de Goblins";
+document.getElementById("idCheckLobos").innerHTML =  "Título: Assassino de Lobos";
+document.getElementById("idCheckSaudelongevidade").innerHTML =  "Habilidade: Saúde e longevidade";
+
+
+  ouro = 831; /*581 + adaga(50) + espada(100)*/
+    document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
+
+    document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+
+  SomaDaPocaoDeVida = 60;
+ document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 50 Poções de Vida na loja: " + SomaDaPocaoDeVida + "/50";
+
+  SomaDaPocaoDeRecuperacao = 149;
+    document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "Faça a compra de 150 Poções de Fadiga na loja: " +  SomaDaPocaoDeRecuperacao + "/150";
+
+  SomaDosCristais =  6775;
+  document.getElementById("idMissaoDiariaCristais").innerHTML = "Tenha 5000 Cristais de Mana minerados: " + SomaDosCristais + "/5000";
+
+    SomaDaPresaDeLycan = 20;
+  document.getElementById("idMissaoDiariaPresaDeLycan").innerHTML = "Ganhe 20 presas de Lycan: " + Lycan + "/20";
+
+     SomaDaPedraDeEssenciaParaMissaDiaria = 10;
+document.getElementById("idMissaoDiariaPedrasDeEssencia").innerHTML = "Ganhe 11 Pedras de essência: " +  SomaDaPedraDeEssenciaParaMissaDiaria +  "/11";
+
+PedraDeEssencia = 0;
+  PresaDeLycan = 0;
+  cristal = 5;
+ 
+ experienciaParaUsarNasHabilidades = 50;
+ document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
+ 
+
+
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+   /*............ FIM DOS PONTOS ATÉ A LUTA DO Lycan ..............*/
+
+  } 
+
+   /*............INÍCIO DOS PONTOS ATÉ A LUTA DO IGRIS ............*/
+    else if (senhaR === "Trono") {
     mensagemR.innerHTML = "Código 'Trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris";
     alert("O código 'Trono' foi inserido: A linha do tempo será reescrita até a luta com o Igris");
-
-  /*............INÍCIO DOS PONTOS ATÉ A LUTA DO IGRIS ............*/
 
    document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
 
@@ -321,7 +422,7 @@ document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Ven
 document.getElementById("idNome1pedra").innerHTML =  "";
 document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
 
-Insectoids = 5
+Insectoids = 5;
 document.getElementById("idNome1Insectoids").innerHTML =  "";
 document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
 
@@ -374,12 +475,198 @@ document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda
 
   } 
   
+   /*............INÍCIO DOS PONTOS ATÉ A LUTA DOS ELFOS DE GELO ............*/
+  else if (senhaR === "Gelo") {
+    mensagemR.innerHTML = "Código 'Gelo' foi inserido: A linha do tempo será reescrita até a luta com os Elfos de gelo";
+    alert("Código 'Gelo' foi inserido: A linha do tempo será reescrita até a luta com os Elfos de gelo");
 
+
+  document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
+
+  mana = 20;
+  document.getElementById("idAumentoDoNivelDaMana").innerHTML =  "🪄 Mana: " + mana + "%/" + AumentoDoNivelDaMana + "%";
+  progresso3.setAttribute("style", "width: " + mana + "%");
+
+  fadiga = 0;
+  document.getElementById("idfadiga").innerHTML = "🪫Fadiga: " + fadiga + "%";
+  progresso.setAttribute("style", "width: " + fadiga + "%");
+
+  vida = 100;
+  progresso2.setAttribute("style", "width: " + vida + "%");
+  document.getElementById("idvida").innerHTML = "❤️ Vida: " + vida + "%";
+
+  atributo = 44;
+  document.getElementById("idatributo").innerHTML =    "Disponíveis: " + atributo;
+
+  agilidade = 62; /*160-222 = */
+  forca = 86;  /*271-185*/
+  percepcao = 65; /*120-55*/
+  inteligencia = 55;/*100-45*/
+    document.getElementById("idagilidade").innerHTML =  "🦵 Agilidade: " + agilidade;
+    document.getElementById("idforca").innerHTML = "💪 Força: " + forca;
+    document.getElementById("idpercepcao").innerHTML =  "👀 Percepção: " + percepcao;
+    document.getElementById("idinteligencia").innerHTML =   "🧠 Inteligência: " + inteligencia;
+ const dados = { agilidade, forca, percepcao, inteligencia,}; atualizarGrafico(dados);  /*FIM DO ATUALIZAR GRÁFICO*/
+
+
+EqualizadoDoNivel = 38; /*Nível 38*/
+dia = 12;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
+RecompensaDiaria = 11;
+document.getElementById("idNivelDoRank").innerHTML = "Rank: B ⭐⭐⭐⭐";
+ document.getElementById("idClasse").innerHTML = "Classe: Necromante [Monarca das Sombras]";
+document.getElementById("idnivel").innerHTML ="Nível: " + EqualizadoDoNivel;
+
+TituloLordeDaMineracaoEstaEmUso = 1;
+TituloEntusiastaEstaEmUso = 1;
+document.getElementById("idCheckEntusiasta").innerHTML =  "Título: Entusiata da Mineração";
+document.getElementById("idCheckLordeDaMineracao").innerHTML = "Título: Lorde da Mineração";
+ document.getElementById("idCheckGoblins").innerHTML =   "Título: Exterminador de Goblins";
+document.getElementById("idCheckLobos").innerHTML =  "Título: Assassino de Lobos";
+document.getElementById("idCheckAdversidade").innerHTML =  "Título: Aquele que Superou a Adversidade";
+document.getElementById("idItemToqueDoDominadorAdquirida").innerHTML =   "Toque do Dominador";
+document.getElementById("idItemElmoAdquirida").innerHTML =  "Elmo do Cavaleiro Carmesim";
+ document.getElementById("idItemPresaKasakaAdquirida").innerHTML = "Presa Venenosa de Kasaka";
+document.getElementById("idItemColeiraAdquirida").innerHTML =  "Coleira do Guardião";
+document.getElementById("idItemAssassinaCavaleirosAdquirida").innerHTML = "Assassina de Cavaleiros";
+document.getElementById("idCheckSaudelongevidade").innerHTML =  "Habilidade: Saúde e longevidade";
+   document.getElementById("idCheckAssassina").innerHTML =  "Habilidade: Intenção Assassina";
+document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtividade";
+    document.getElementById("idCheckArrancada").innerHTML = "Habilidade: Arrancada";
+
+
+
+  ouro = 3752; /*187 em estoque + 3565 todas os equipamentos*/
+    document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
+  SomaDaPocaoDeVida = 154;
+   document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+  SomaDaPocaoDeRecuperacao = 394;
+   document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "";
+  SomaDosCristais =  26914;
+  document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+  SomaDaPresaDeLycan = 20;
+  PresaDeLycan = 0;
+  PedraDeEssencia = 0;
+  cristal = 0;
+  SomaDaPedraDeEssenciaParaMissaDiaria = 12;
+ experienciaParaUsarNasHabilidades = 313; /*133 em estoque + 100 do Aquele que Superou a Adversidade + 80 da barra de mana*/
+ document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
+
+
+document.getElementById("idRetornoMissaoDiariaTreino").innerHTML = "Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "Faça a compra de 160 Poções de Vida na loja: " + SomaDaPocaoDeVida + "/160";
+ document.getElementById( "idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "Faça a compra de 360 Poções de Fadiga na loja: " + SomaDaPocaoDeRecuperacao +  "/360";
+ document.getElementById("idMissaoDiariaCristais").innerHTML =   "Tenha 30.000 Cristais de Mana minerados: " + SomaDosCristais +  "/30000";
+
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+Kasaka = 1;
+document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
+
+Insectoids = 5
+document.getElementById("idNome1Insectoids").innerHTML =  "";
+document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
+
+Aranha = 1;
+document.getElementById("idNome1Buryura").innerHTML =  "";
+document.getElementById("idNome2Buryura").innerHTML =  "Buryura";
+
+Cacadores = 6;
+document.getElementById("idNome1Hwang").innerHTML =  "";
+document.getElementById("idNome2Hwang").innerHTML =  "Hwang Dong Suk e seu grupo";
+
+Cerberus = 1;
+document.getElementById("idNome1Cerberus").innerHTML =  "";
+document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+
+Kang = 1;
+document.getElementById("idNome1Kang").innerHTML =  "";
+document.getElementById("idNome2Kang").innerHTML =  "Mr. Kang";
+
+Igris = 3;
+document.getElementById("idNome1Igris").innerHTML =  "";
+document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
+
+Magos = 2;
+document.getElementById("idNome16Magos").innerHTML =  "";
+document.getElementById("idNome26Magos").innerHTML =  "6 Magos Necromantes";
+
+Ursos = 6;
+document.getElementById("idNome1Ursos").innerHTML =  "";
+document.getElementById("idNome2Ursos").innerHTML =  "Ursos de Gelo";
+
+Elfos = 1;
+document.getElementById("idNome1Elfos").innerHTML =  "";
+document.getElementById("idNome2Elfos").innerHTML =  "Elfos do gelo";
+
+Yoo = 20;
+document.getElementById("idNome1Yoo").innerHTML =  "";
+document.getElementById("idNome2Yoo").innerHTML =  "Yoo Jin-Ho";
+document.getElementById("iditem1").innerHTML = "✅ Item: Peitoral do grande cavaleiro [+ 1 ponto de atributo adicionado em Força]";
+document.getElementById("iditem2").innerHTML = "✅ Item: Manopla do grande guerreiro [+ 1 ponto de atributo adicionado em Agilidade]";
+document.getElementById("iditem3").innerHTML = "✅ Item: Botas do grande Assassino [+ 2 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem4").innerHTML = "✅ Item: Luvas do grande Arqueiro [+ 2 ponto de atributo adicionado em Percepção]";
+document.getElementById("iditem5").innerHTML = "✅ Item: Anel do grande Mago [+ 3 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem6").innerHTML = "✅ Item: Saco de couro [+ 500 moedas de ouro adicionadas no seu inventário]";
+document.getElementById("iditem7").innerHTML = "✅ Habilidade: Perseverança [+ 3 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem8").innerHTML = "✅ Habilidade: Ataque Vital [+ 4 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem9").innerHTML = "✅ Habilidade: Artes Avançadas com Adagas [+ 4 pontos de atributos adicionados em Força]";
+document.getElementById("iditem10").innerHTML = "✅ Habilidade: Detectar [+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem11").innerHTML = "✅ Habilidade: Arremesso de Adaga [+ 5 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem12").innerHTML = "✅ Efeito: Orbe da Avareza - Desejo pela destruição [+ 5 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem14").innerHTML = "✅ Habilidade: Golpe Fatal[+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem15").innerHTML = "✅ Habilidade: Flame Spear desbloqueada [Aba ➜ Habilidades ➜ Healer e Magos]";
+document.getElementById("iditem16").innerHTML = "✅ Item: Veneno da Kasaka Azul de Presas Venenosas [Recupere 100% da sua vida]";
+document.getElementById("iditem19").innerHTML = "✅ Habilidade: Força de vontade [Recupere 100% da sua vida]";
+document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda [+ 3000 moedas de ouro adicionadas no seu inventário]";
+
+ HabilidadeLiberadaFlameSpear = 1;
+ document.getElementById("idCheckFlameSpear").innerHTML =  "⚠️ Habilidade: Flame Spear";
+
+  /*INÍCIO IR PARA O Solo Leveling Arise from the Shadow*/
+  var conteudo = document.getElementById("conteudo");
+  var conteudoAlternativo = document.getElementById("conteudo-alternativo");
+  conteudo.innerHTML = conteudoAlternativo.innerHTML;
+/*FIM IR PARA O SOLO LEVELING ARISE*/
+
+RastroDeSombra = 29; /*4*7 + 1 */
+document.getElementById("idTotalDosRastrosDeSombra").innerHTML = "Rastro de Sombras: " + RastroDeSombra;
+document.getElementById("idChecDoIgris").innerHTML = "Igris - O Vermelho-Sangue";
+document.getElementById("idChecDosMagos").innerHTML = "6 Magos das Sombras";
+document.getElementById("idChecDoTank").innerHTML = "Tank - Urso de gelo escuro";
+   
+  } 
+  /*............ FIM DOS PONTOS ATÉ A LUTA DO Elfos de gelo ..............*/
+
+
+   /*............INÍCIO DOS PONTOS ATÉ A LUTA DO KARKALGAN ............*/
   else if (senhaR === "Hino") {
     mensagemR.innerHTML = "Código 'Hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan";
     alert("Código 'Hino' foi inserido: A linha do tempo será reescrita até a luta com o Kargalgan");
 
-    /*............INÍCIO DOS PONTOS ATÉ A LUTA DO KARKALGAN ............*/
 
       document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
 
@@ -574,19 +861,17 @@ document.getElementById("idChecDoTank").innerHTML = "Tank - Urso de gelo escuro"
 document.getElementById("idChecDoIron").innerHTML = "Iron - Caçador Rank A";
 document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
 
-   /*............ FIM DOS PONTOS ATÉ A LUTA DO KARKALGAN ..............*/
-
-
- 
+   
   } 
-  
+  /*............ FIM DOS PONTOS ATÉ A LUTA DO KARKALGAN ..............*/
+
+
+
+   /*............INÍCIO DOS PONTOS ATÉ A LUTA DO REI FORMIGA ............*/
   else if (senhaR === "Rei") {
     mensagemR.innerHTML = "Código 'Rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga";
     alert("Código 'Rei' foi inserido: A linha do tempo será reescrita até a luta com o Rei Formiga");
 
-
-
- /*............INÍCIO DOS PONTOS ATÉ A LUTA DO REI FORMIGA ............*/
 
    document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
 
@@ -696,6 +981,9 @@ document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
 Kasaka = 1;
 document.getElementById("idNome1Kasaka").innerHTML =  "";
 document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
 
 Insectoids = 5
 document.getElementById("idNome1Insectoids").innerHTML =  "";
@@ -834,6 +1122,7 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
   else if (senhaR === "Deus") {
     mensagemR.innerHTML = "Parabéns, agora você é Deus!!!";
     alert("Parabéns, agora você é Deus!!!");
+    alert("Códigos: Presa, Trono, Gelo, Hino, Rei");
 RastroDeSombra = 1000;
 dia = 1;
 RecompensaDiaria = 0;
@@ -3027,7 +3316,7 @@ if (dia === 14) {
 
       document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
 
-      document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Antares - Rei dos Dragões - Monarca da Destruição [Boss Final - Arco dos Monarcas: A luta entre Governantes e Monarcas]";
+      document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Yogumunt - Rei dos Espectros Demoníacos - Monarca da Transfiguração [Arco dos Monarcas: A luta entre Governantes e Monarcas]";
   document.getElementById(
         "idRetornoMissaoDiariaTreino",
       ).innerHTML =
@@ -3045,7 +3334,7 @@ if (dia === 14) {
     if (
       RecompensaDiaria === 14 &&
        treino === 100 &&
-      Antares === 1 
+      Yogumunt === 1 
     ) {
       RecompensaDiaria = 15;
 
@@ -3909,6 +4198,10 @@ function LutaContraLycanBotao() {
      
       alert("Parabéns você ganhou um novo Título.",);
      alert("✨ Novo título: Assassino de Lobos ✨",);
+
+     
+alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
+          alert("Código do Lycan: Presa", );
 
       document.getElementById("idtitulo").innerHTML = "Novo Título disponível - Para trocar de Título vá na aba Classe e Títulos";
       document.getElementById("idTituloAlerta").innerHTML = "⚠️";
@@ -6955,6 +7248,7 @@ if (FloracaoCompletaNivel2EmUso === 1){
   document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
   document.getElementById("idAlertaNoMenuHabilidade").innerHTML = "⚠️ Habilidades";
   document.getElementById("idAlertaNoMenuInventario").innerHTML =  "⚠️ Inventário";
+  document.getElementById("idRetornoElixirDaVida").innerHTML = "⚠️ Ceberus derrotado [Necessário todos os ingredientes para criar o Elixir da Vida]";
   
   document.getElementById("idNome1Cerberus").innerHTML =  "";
 document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
@@ -8232,8 +8526,10 @@ if (FloracaoCompletaNivel2EmUso === 1){
         
    alert("Parabéns você ganhou um novo Título", );
           alert("✨ Novo título: Aquele que Superou a Adversidade  ✨", );
-          alert("📢 ATENÇÃO 📢 Você achou o primeiro código de salvamento para usar na Taça da Reencarnação!", );
+          
+alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
           alert("Código do Igris: Trono", );
+
 
           document.getElementById("idNome1Igris").innerHTML =  "";
 document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
@@ -11564,7 +11860,7 @@ atualizarGrafico(dados);
   }
 
   else if (Rei < 1 && OcacadorMaisForteDaHumanidade === 0){
-    document.getElementById("idTituloRetornoOcacadorMaisForteDaHumanidade",).innerHTML = "Esse Título pode ser desbloqueadao ao derrotar o Rei Formiga";
+    document.getElementById("idTituloRetornoOcacadorMaisForteDaHumanidade",).innerHTML = "Esse Título pode ser desbloqueado ao derrotar o Rei Formiga";
   }
 }
  /*FIM DO TÍTULO O caçador mais forte da humanidade*/
@@ -12144,6 +12440,9 @@ criarVagalumes();
   
       document.getElementById("idQuadroDeRetornoElfos").innerHTML = 
       "✨ VITÓRIA ✨ [Recompensas: 10 ponto de experiência - 4 Pontos de Atributos - 2 Pedras de Essência]";
+
+      alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
+          alert("Código dos Elfos do gelo: Gelo", );
   
       experienciaElfos = experienciaElfos + 10;
       document.getElementById("idexperienciaElfos").innerHTML =  "🏆 Experiência: " + experienciaElfos;
@@ -13495,7 +13794,7 @@ document.getElementById("idNome2Kargalgan").innerHTML =  "Kargalgan";
         document.getElementById("idAlertaNoMenuInventario").innerHTML = "⚠️ Inventário";
 
        
-          alert("📢 ATENÇÃO 📢 Você achou o segundo código de salvamento para usar na Taça da Reencarnação!", );
+          alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
           alert("Código do Kargalgan: Hino", );
      
             /*INÍCIO DO REMOVER ECLIPSE LUNAR */
@@ -19897,6 +20196,7 @@ function AnalisarLutaContraArquitetoBotao() {
     document.getElementById("idQuadroDeRetornoArquiteto").innerHTML =     "✨ VITÓRIA ✨ Agora você é o ADM do Sistema [Habilidade coração negro desbloqueado]";
 
     alert(" Antes de morrer o Arquiteto fez uma profecia: Quando os pilares de fogo que sustentam o céu estiverem erguidos, a morte inevitável irá bater a sua porta.");
+alert(" Habilidade Autoridade do Monarca liberada - Vá no Menu ➡ Inventário ➡ Equipamentos ➡ Toque do Dominador ➡ Evoluir o nível da habilidade");
 
     document.getElementById("idLutaContraArquitetoBotao").innerHTML = "Arquiteto derrotado";
 
@@ -20420,8 +20720,10 @@ document.getElementById("idTituloAlerta").innerHTML = "⚠️";
  document.getElementById("idCheckOcacadorMaisForteDaHumanidade").innerHTML =   "⚠️ Título: O caçador mais forte da humanidade";
  document.getElementById("idTituloRetornoOcacadorMaisForteDaHumanidade",).innerHTML = "";
 
-      alert("📢 ATENÇÃO 📢 Você achou o terceiro código de salvamento para usar na Taça da Reencarnação!", );
-          alert("Código do Rei Formiga: Rei", );
+      
+  alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
+ alert("Código do Rei Formiga: Rei", );
+
     
        
 
@@ -20872,6 +21174,14 @@ function AnalisarLutaContraTarnakBotao() {
   if (inteligenciaDasSombras > 900) { document.getElementById( "idInteligenciaTarnak").innerHTML = "🧠 Inteligência: 900/" + inteligenciaDasSombras + " ✅";
   }
  
+  if (RecompensaDiaria < 15) {
+    document.getElementById("idtarefasdiariasconcluidas").innerHTML =  "📦 Ter concluído todos os dias da Tarefa diária: Não ❌";
+  }
+
+   if (RecompensaDiaria === 15) {
+    document.getElementById("idtarefasdiariasconcluidas").innerHTML =  "📦 Ter concluído todos os dias da Tarefa diária: Sim ✅";
+  }
+
  }
  
  /*FIM DO BOTÃO ANALISAR  LUTA DA Tarnak */
@@ -20892,6 +21202,7 @@ function AnalisarLutaContraTarnakBotao() {
     agilidadeDasSombras > 1100 &&
     forcaDasSombras > 1300 && 
     percepcaoDasSombras > 950 &&
+     RecompensaDiaria === 15 &&
     inteligenciaDasSombras > 900
     ) {
      
@@ -23302,6 +23613,7 @@ const config = {
 };
 
 const radarChart = new Chart(ctx, config);
+
 
 function atualizarGrafico(dados) {
   radarChart.data.datasets[0].data = [dados.agilidade, dados.forca, dados.percepcao, dados.inteligencia];
