@@ -865,6 +865,225 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
   } 
   /*............ FIM DOS PONTOS ATÉ A LUTA DO KARKALGAN ..............*/
 
+   /*............INÍCIO DOS PONTOS ATÉ A LUTA DO METUS ............*/
+  else if (senhaR === "Guia") {
+    mensagemR.innerHTML = "Código 'Guia' foi inserido: A linha do tempo será reescrita até a luta com o Metus guía das almas [75º Andar]";
+    alert("Código 'Guia' foi inserido: A linha do tempo será reescrita até a luta com o Metus guía das almas [75º Andar]");
+
+
+   document.getElementById("idItemFerramentaDeDeusAdquirida").innerHTML = "✅ Taça da Reencarnação - Ferramenta de Deus";
+
+  mana = 20;
+  document.getElementById("idAumentoDoNivelDaMana").innerHTML =  "🪄 Mana: " + mana + "%/" + AumentoDoNivelDaMana + "%";
+  progresso3.setAttribute("style", "width: " + mana + "%");
+
+  fadiga = 0;
+  document.getElementById("idfadiga").innerHTML = "🪫Fadiga: " + fadiga + "%";
+  progresso.setAttribute("style", "width: " + fadiga + "%");
+
+  vida = 100;
+  progresso2.setAttribute("style", "width: " + vida + "%");
+  document.getElementById("idvida").innerHTML = "❤️ Vida: " + vida + "%";
+
+  atributo = 44;
+  document.getElementById("idatributo").innerHTML =    "Disponíveis: " + atributo;
+
+  agilidade = 79; /*299-220=*/
+  forca = 95;  /*390-295*/
+  percepcao = 64; /*169-105=*/
+  inteligencia = 35;/*180-145=*/
+    document.getElementById("idagilidade").innerHTML =  "🦵 Agilidade: " + agilidade;
+    document.getElementById("idforca").innerHTML = "💪 Força: " + forca;
+    document.getElementById("idpercepcao").innerHTML =  "👀 Percepção: " + percepcao;
+    document.getElementById("idinteligencia").innerHTML =   "🧠 Inteligência: " + inteligencia;
+  const dados = { agilidade, forca, percepcao, inteligencia,}; atualizarGrafico(dados); /*FIM DO ATUALIZAR GRÁFICO*/
+
+
+EqualizadoDoNivel = 45; /*Nível 44*/
+dia = 14;
+ document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
+RecompensaDiaria = 13;
+document.getElementById("idNivelDoRank").innerHTML = "Rank: A ⭐⭐⭐⭐⭐";
+ document.getElementById("idClasse").innerHTML = "Classe: Necromante [Monarca das Sombras]";
+document.getElementById("idnivel").innerHTML ="Nível: " + EqualizadoDoNivel;
+
+TituloLordeDaMineracaoEstaEmUso = 1;
+TituloEntusiastaEstaEmUso = 1;
+document.getElementById("idCheckEntusiasta").innerHTML =  "Título: Entusiata da Mineração";
+document.getElementById("idCheckLordeDaMineracao").innerHTML = "Título: Lorde da Mineração";
+ document.getElementById("idCheckGoblins").innerHTML =   "Título: Exterminador de Goblins";
+document.getElementById("idCheckLobos").innerHTML =  "Título: Assassino de Lobos";
+document.getElementById("idCheckAdversidade").innerHTML =  "Título: Aquele que Superou a Adversidade";
+    document.getElementById("idCheckOcacadorMaisForteDaHumanidade").innerHTML =  "Título: O caçador mais forte da humanidade";
+document.getElementById("idItemToqueDoDominadorAdquirida").innerHTML =   "Toque do Dominador";
+document.getElementById("idItemElmoAdquirida").innerHTML =  "Elmo do Cavaleiro Carmesim";
+ document.getElementById("idItemPresaKasakaAdquirida").innerHTML = "Presa Venenosa de Kasaka";
+document.getElementById("idItemColeiraAdquirida").innerHTML =  "Coleira do Guardião";
+document.getElementById("idItemAssassinaCavaleirosAdquirida").innerHTML = "Assassina de Cavaleiros";
+document.getElementById("idCheckSaudelongevidade").innerHTML =  "Habilidade: Saúde e longevidade";
+   document.getElementById("idCheckAssassina").innerHTML =  "Habilidade: Intenção Assassina";
+document.getElementById("idCheckFurtividade").innerHTML = "Habilidade: Furtividade";
+    document.getElementById("idCheckArrancada").innerHTML = "Habilidade: Arrancada";
+    document.getElementById("idItemOrbeVulcanoAdquirida").innerHTML = "Orbe da Avareza";
+ document.getElementById("idItemBrincoAdquirida").innerHTML = "Brinco do Monarca Demoníaco";
+ document.getElementById("idItemColarAdquirida").innerHTML = "Colar do Monarca Demoníaco";
+  document.getElementById("idItemAnelAdquirida").innerHTML = "Anel do Monarca Demoníaco";
+
+  ouro = 4670; /*1105 em estoque + 3565 todas os equipamentos*/
+    document.getElementById("idouro").innerHTML = "Ouro: " + ouro;
+  SomaDaPocaoDeVida = 161;
+   document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+  SomaDaPocaoDeRecuperacao = 361;
+   document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao", ).innerHTML = "";
+  SomaDosCristais =  30001;
+  document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+  SomaDaPresaDeLycan = 20;
+  PresaDeLycan = 0;
+  PedraDeEssencia = 0;
+  cristal = 0;
+  SomaDaPedraDeEssenciaParaMissaDiaria = 12;
+ experienciaParaUsarNasHabilidades = 320; /*135 em estoque + 100 do Aquele que Superou a Adversidade + 80 da barra de mana*/
+
+document.getElementById( "idContarExperienciaNoQuadroHabilidades", ).innerHTML = "Pontos de experiência: " + experienciaParaUsarNasHabilidades;
+document.getElementById("idRetornoMissaoDiariaTreino").innerHTML ="Faça a Missão Diária, você pode escolher entre Ganho de Força ou Sobrevivencia";
+document.getElementById("idDiaMissaoDiaria").innerHTML = "Objetivo do dia: " + dia;
+document.getElementById("idRetornoMissaoDiariaPocaoDeVida").innerHTML = "";
+document.getElementById("idMissaoDiariaCristais").innerHTML =   "";
+document.getElementById("idRetornoMissaoDiariaPocaoDeRecuperacao",).innerHTML = "";
+document.getElementById("idMissaoDiariaMatarBoss").innerHTML = "Derrote o Rei Formiga [Boss na Dangeon Ilha de Jeju]";
+
+Kandiaru = 2;
+document.getElementById("idNome1PrimeiroMandamento").innerHTML =  "";
+document.getElementById("idNome2PrimeiroMandamento").innerHTML =  "Primeiro Mandamento: Venere a Deus";
+
+Kandiaru1 = 2;
+document.getElementById("idNome1LouveDeus").innerHTML =  "";
+document.getElementById("idNome2LouveDeus").innerHTML =  "Segundo Mandamento: Louve a Deus";
+
+Kandiaru2 = 2;
+document.getElementById("idNome1ProvesuafeemDeus").innerHTML =  "";
+document.getElementById("idNome2ProvesuafeemDeus").innerHTML =  "Terceiro Mandamento: Prove sua fé em Deus";
+
+Goblin = 10;
+document.getElementById("idNome1Goblins").innerHTML =  "";
+document.getElementById("idNome2Goblins").innerHTML =  "Goblins";
+
+Lycan = 20;
+document.getElementById("idNome1Lycan").innerHTML =  "";
+document.getElementById("idNome2Lycan").innerHTML =  "Lycan com Presas de Aço";
+
+Kasaka = 1;
+document.getElementById("idNome1Kasaka").innerHTML =  "";
+document.getElementById("idNome2Kasaka").innerHTML =  "Kasaka Azul de Presas Venenosas";
+
+document.getElementById("idNome1pedra").innerHTML =  "";
+document.getElementById("idNome2pedra").innerHTML =  "Pedra Rúnica [FUGA]";
+
+Insectoids = 5
+document.getElementById("idNome1Insectoids").innerHTML =  "";
+document.getElementById("idNome2Insectoids").innerHTML =  "Insectoids";
+
+Aranha = 1;
+document.getElementById("idNome1Buryura").innerHTML =  "";
+document.getElementById("idNome2Buryura").innerHTML =  "Buryura";
+
+Cacadores = 6;
+document.getElementById("idNome1Hwang").innerHTML =  "";
+document.getElementById("idNome2Hwang").innerHTML =  "Hwang Dong Suk e seu grupo";
+
+Cerberus = 1;
+document.getElementById("idNome1Cerberus").innerHTML =  "";
+document.getElementById("idNome2Cerberus").innerHTML =  "Cerberus Guardião do Inferno [Portões do Castelo Demoníaco]";
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+ 
+Kang = 1;
+document.getElementById("idNome1Kang").innerHTML =  "";
+document.getElementById("idNome2Kang").innerHTML =  "Mr. Kang";
+
+Igris = 3;
+document.getElementById("idNome1Igris").innerHTML =  "";
+document.getElementById("idNome2Igris").innerHTML =  "Igris o Vermelho-Sangue";
+
+Magos = 2;
+document.getElementById("idNome16Magos").innerHTML =  "";
+document.getElementById("idNome26Magos").innerHTML =  "6 Magos Necromantes";
+
+Ursos = 6;
+document.getElementById("idNome1Ursos").innerHTML =  "";
+document.getElementById("idNome2Ursos").innerHTML =  "Ursos de Gelo";
+
+Elfos = 1;
+document.getElementById("idNome1Elfos").innerHTML =  "";
+document.getElementById("idNome2Elfos").innerHTML =  "Elfos do gelo";
+
+KinChul = 1;
+document.getElementById("idNome1Chul").innerHTML =  "";
+document.getElementById("idNome2Chul").innerHTML =  "Kim Chul";
+
+Baruka = 2;
+document.getElementById("idNome1Baruka").innerHTML =  "";
+document.getElementById("idNome2Baruka").innerHTML =  "Baruka Elfo do gelo";
+
+Kargalgan = 1;
+document.getElementById("idNome1Kargalgan").innerHTML =  "";
+document.getElementById("idNome2Kargalgan").innerHTML =  "Kargalgan";
+
+Demonios = 1;
+document.getElementById("idNome1Demonios").innerHTML =  "";
+document.getElementById("idNome2Demonios").innerHTML =  "Demônios [Andares inferiores]";
+
+Vulcano = 1;
+document.getElementById("idNome1Vulcano").innerHTML =  "";
+document.getElementById("idNome2Vulcano").innerHTML =  "Vulcano Avarento [50º Andar]";
+
+Metus = 1;
+document.getElementById("idNome1Metus").innerHTML =  "";
+document.getElementById("idNome2Metus").innerHTML =  "Metus guía das almas [75º Andar]";
+
+Yoo = 20;
+document.getElementById("idNome1Yoo").innerHTML =  "";
+document.getElementById("idNome2Yoo").innerHTML =  "Yoo Jin-Ho";
+document.getElementById("iditem1").innerHTML = "✅ Item: Peitoral do grande cavaleiro [+ 1 ponto de atributo adicionado em Força]";
+document.getElementById("iditem2").innerHTML = "✅ Item: Manopla do grande guerreiro [+ 1 ponto de atributo adicionado em Agilidade]";
+document.getElementById("iditem3").innerHTML = "✅ Item: Botas do grande Assassino [+ 2 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem4").innerHTML = "✅ Item: Luvas do grande Arqueiro [+ 2 ponto de atributo adicionado em Percepção]";
+document.getElementById("iditem5").innerHTML = "✅ Item: Anel do grande Mago [+ 3 ponto de atributo adicionado em Inteligência]";
+document.getElementById("iditem6").innerHTML = "✅ Item: Saco de couro [+ 500 moedas de ouro adicionadas no seu inventário]";
+document.getElementById("iditem7").innerHTML = "✅ Habilidade: Perseverança [+ 3 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem8").innerHTML = "✅ Habilidade: Ataque Vital [+ 4 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem9").innerHTML = "✅ Habilidade: Artes Avançadas com Adagas [+ 4 pontos de atributos adicionados em Força]";
+document.getElementById("iditem10").innerHTML = "✅ Habilidade: Detectar [+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem11").innerHTML = "✅ Habilidade: Arremesso de Adaga [+ 5 pontos de atributos adicionados em Agilidade]";
+document.getElementById("iditem12").innerHTML = "✅ Efeito: Orbe da Avareza - Desejo pela destruição [+ 5 pontos de atributos adicionados em Inteligência]";
+document.getElementById("iditem14").innerHTML = "✅ Habilidade: Golpe Fatal[+ 4 pontos de atributos adicionados em Percepção]";
+document.getElementById("iditem15").innerHTML = "✅ Habilidade: Flame Spear desbloqueada [Aba ➜ Habilidades ➜ Healer e Magos]";
+document.getElementById("iditem16").innerHTML = "✅ Item: Veneno da Kasaka Azul de Presas Venenosas [Recupere 100% da sua vida]";
+document.getElementById("iditem19").innerHTML = "✅ Habilidade: Força de vontade [Recupere 100% da sua vida]";
+document.getElementById("iditem20").innerHTML = "✅ Posição: Mestre de Guilda [+ 3000 moedas de ouro adicionadas no seu inventário]";
+
+ HabilidadeLiberadaFlameSpear = 1;
+ document.getElementById("idCheckFlameSpear").innerHTML =  "⚠️ Habilidade: Flame Spear";
+
+ document.getElementById("idCheckElixirDaVida").innerHTML = "✅  Habilidade Disponível: Elixir da Vida";
+document.getElementById("idCheckFragmentoDaAvoreDaVida").innerHTML =  "✅ Fragmento da árvore do mundo";
+document.getElementById("idCheckAguaNascenteDaFlorestaEcoante").innerHTML =  "✅ Água nascente da floresta ecoante";
+
+
+  /*INÍCIO IR PARA O Solo Leveling Arise from the Shadow*/
+  var conteudo = document.getElementById("conteudo");
+  var conteudoAlternativo = document.getElementById("conteudo-alternativo");
+  conteudo.innerHTML = conteudoAlternativo.innerHTML;
+/*FIM IR PARA O SOLO LEVELING ARISE*/
+
+RastroDeSombra = 51;
+document.getElementById("idTotalDosRastrosDeSombra").innerHTML = "Rastro de Sombras: " + RastroDeSombra;
+document.getElementById("idChecDoIgris").innerHTML = "Igris - O Vermelho-Sangue";
+document.getElementById("idChecDosMagos").innerHTML = "6 Magos das Sombras";
+document.getElementById("idChecDoTank").innerHTML = "Tank - Urso de gelo escuro";
+document.getElementById("idChecDoIron").innerHTML = "Iron - Caçador Rank A";
+document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
+  }
+   /*............ FIM DOS PONTOS ATÉ A LUTA METUS ..............*/
 
 
    /*............INÍCIO DOS PONTOS ATÉ A LUTA DO REI FORMIGA ............*/
@@ -1122,7 +1341,7 @@ document.getElementById("idChecDoTusk").innerHTML = "Tusk - Xamã das Sombras";
   else if (senhaR === "Deus") {
     mensagemR.innerHTML = "Parabéns, agora você é Deus!!!";
     alert("Parabéns, agora você é Deus!!!");
-    alert("Códigos: Presa, Trono, Gelo, Hino, Rei");
+    alert("Códigos: Presa, Trono, Gelo, Hino, Guia, Rei");
 RastroDeSombra = 1000;
 dia = 1;
 RecompensaDiaria = 0;
@@ -14874,7 +15093,8 @@ document.getElementById("idNome2Metus").innerHTML =  "Metus guía das almas [75�
       document.getElementById("idQuadroDeRetornoMetus").innerHTML = 
       "✨ VITÓRIA ✨ [Recompensas: 10 ponto de experiência - 5 Pontos de Atributos - 10 Pedras de Essência - Equipamento Colar do Monarca Demônio - Água nascente da floresta ecoante]";
 
-    
+    alert("📢 ATENÇÃO 📢 Você achou um código de salvamento para usar na Taça da Reencarnação! Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento.", );
+          alert("Código do Metus: Guia", );
 
       experienciaMetus = experienciaMetus + 10;
       document.getElementById("idexperienciaMetus").innerHTML =  "🏆 Experiência: " + experienciaMetus;
