@@ -1,9 +1,3 @@
-alert("Olá, seja bem-vido ao Solo Leveling");
-  alert("Considerado o mais fraco da humanidade. Ele sobrevive a uma masmorra dupla e é escolhido por um programa misterioso como seu único jogador. O programa lhe dá a habilidade de aumentar sua força, possivelmente além de qualquer limite conhecido.");
-  alert("Inicie o jogo realizando todas as tarefas do dia 1 no menu [TAREFAS DIÁRIAS]. As tarefas diárias serão o seu Tutorial para o jogo.");
-alert("Com a Taça da Reencarnação você pode alterar a linha do tempo. Caso você não chegue até o final do jogo e o aplicativo apague os seus dados, você pode começar direto de algum PONTO DE SALVAMENTO quando for jogar novamente, assim não é necessário começar do nível 0. Será atribuído pontos equivalente ao nível correspondente, assim como a derrota automática dos monstros até o ponto de salvamento. Os pontos de salvamento são no Lycan, Igris, Kargalgan, Metus e no Rei Formiga [Os Códigos irão aparecer ao chegar no Ponto de Salvamento].");
-
-
 var nivel = 1;
 var EqualizadoDoNivel = 1;
 var cristal = 0;
